@@ -20,13 +20,23 @@ My goal is to build strong Linux fundamentals for Cloud / DevOps roles.
 ## Repository Structure
 ```text
 Linux-Learning/
-├── Daily Logs/
-│   └── day01-Using-The-Shell
-├── bash-scripts/
-│   └── backup.sh
-└── README.md
+├── README.md
+└── bash-scripts/
+    └── backup.sh
+
 
 ## 📌 Note
 I studied Linux consistently before starting this log.
 Daily logging begins here to keep track of progress going forward.
+
+## Previous Topics I covered
+
+## 📖 Learning Log
+
+**Entry 1**
+- Focus: Using locate to find files by name, Searching files with find, Finding files by user, Finding files by permission, Finding files by date and time, Using 'not' and 'or' when finding files, Finding files and executing commands, Searching in file with grep
+- Commands / Concepts: `-not`,`or`,`grep`,`locate`,`find`
+- Practice:
+- Notes / Issues:
+
 
