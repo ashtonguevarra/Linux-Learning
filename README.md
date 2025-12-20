@@ -38,12 +38,19 @@ Daily logging begins here to keep track of progress going forward.
 - Commands / Concepts: `-not`,`-or`,`grep`,`locate`,`find`
 - Practice:
     - Created a `TEST` directory in the home directory
+        - `mkdir TEST`
     - Created files `one`, `two`, and `three`
+        - `cd TEST`,`touch one two three` 
     - Set full read, write, and execute permissions for user, group, and others
+        - `chmod ugo+rwx one two three` 
     - Used `find` to search for files writable by others from the home directory
+        - `find /home/ashton -perm 777 -ls` 
     - Used `find` to locate files under `/usr/share/doc` not modified in over 300 days
+        - `find /usr/share/doc -ctime +300` 
     - Created `/tmp/FILES` directory
+        - `mkdir /tmp/FILES` 
     - Used `find` with size filters to locate files between 5MB and 10MB under `/usr/share`
+        - `find /usr/share -size +5M -size -10M` 
 - Notes / Issues:
     - `chmod 777` grants full permissions to everyone
     - `-ctime +300` finds files older than 300 days
