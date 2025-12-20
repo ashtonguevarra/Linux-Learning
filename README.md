@@ -18,4 +18,12 @@ My goal is to build strong Linux fundamentals for Cloud / DevOps roles.
 - Terminal: Kitty 0.44.0
 
 ## Repository Structure
+```text
+Linux-Learning/
+├── Daily Logs/
+│   └── day01-Using-The-Shell
+├── bash-scripts/
+│   └── backup.sh
+└── README.md
+
 
