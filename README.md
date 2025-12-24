@@ -34,8 +34,8 @@ Daily logging begins here to keep track of progress going forward.
 ## 📖 Learning Log
 
 **Entry 1**
-- Focus: Using locate to find files by name, Searching files with find, Finding files by user, Finding files by permission, Finding files by date and time, Using 'not' and 'or' when finding files, Finding files and executing commands, Searching in file with grep
-- Commands / Concepts: `-not`,`-or`,`grep`,`locate`,`find`
+- Focus: Searching files with find, Finding files by user, Finding files by permission, Finding files by date and time, Finding files and executing commands 
+- Commands / Concepts: Working with text files,`find`, `mkdir`, `chmod`, `cd`,`-ctime`, `-perm`
 - Practice:
     - Created a `TEST` directory in the home directory
         - `mkdir TEST`
@@ -58,4 +58,27 @@ Daily logging begins here to keep track of progress going forward.
     - Copying files from `/usr/share` to `/tmp/FILES` was unsuccessful due to permission restrictions
     - Some files could not be accessed without `sudo`
 
+**Entry 2**
+- Focus: File location, searching, directory creation, and copying files/directories
+- Commands / Concepts:
+    - `locate` – quickly find files using the system database
+    - `find` – search files/directories by path and size
+    - `mkdir` – create directories
+    - `cp -r -a` – copy files/directories recursively while preserving attributes
+    - Absolute vs relative paths
+    - Navigating system directories (`/usr/share`, `/tmp`, home directory)
+
+Practice:
+    - Used locate to search for passwd and /tmp/FILES
+    - Created /tmp/FILES directory
+    - Used find to list files and search by size range
+    - Copied various system files (PDFs, .gir, .jar, .txt) from /usr/share into /tmp/FILES
+    - Verified copied files using find
+    - Copied selected files from /tmp/FILES into a hidden backup directory (.mybackup) in the home directory
+
+Notes / Issues:
+    - locate may return no results if the database is not updated
+    - Some cp commands initially failed due to incorrect paths
+    - Learned the importance of using full absolute paths when copying system files
+    - Confirmed successful file transfers by listing contents after copying
 
