@@ -29,8 +29,6 @@ Linux-Learning/
 I studied Linux consistently before starting this log.
 Daily logging begins here to keep track of progress going forward.
 
-## Previous Topics I covered
-
 ## 📖 Learning Log
 
 **Entry 1**
