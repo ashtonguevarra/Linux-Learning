@@ -57,6 +57,7 @@ Daily logging begins here to keep track of progress going forward.
     - System directories like `/usr/share` often require elevated privileges
     - Copying files from `/usr/share` to `/tmp/FILES` was unsuccessful due to permission restrictions
     - Some files could not be accessed without `sudo`
+##
 
 **Entry 2**
 - Focus: File location, searching, directory creation, and copying files/directories
@@ -68,7 +69,7 @@ Daily logging begins here to keep track of progress going forward.
     - Absolute vs relative paths
     - Navigating system directories (`/usr/share`, `/tmp`, home directory)
 
-Practice:
+- Practice:
     - Used locate to search for passwd and /tmp/FILES
     - Created /tmp/FILES directory
     - Used find to list files and search by size range
@@ -76,7 +77,7 @@ Practice:
     - Verified copied files using find
     - Copied selected files from /tmp/FILES into a hidden backup directory (.mybackup) in the home directory
 
-Notes / Issues:
+- Notes / Issues:
     - locate may return no results if the database is not updated
     - Some cp commands initially failed due to incorrect paths
     - Learned the importance of using full absolute paths when copying system files
