@@ -80,7 +80,7 @@ Daily logging begins here to keep track of progress going forward.
     - Some cp commands initially failed due to incorrect paths
     - Learned the importance of using full absolute paths when copying system files
     - Confirmed successful file transfers by listing contents after copying
-
+##
 **Entry 3**
 - Focus: Managing running processes, understanding processes, listing processes
 - Command / Concepts: 
