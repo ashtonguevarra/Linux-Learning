@@ -123,3 +123,16 @@ Daily logging begins here to keep track of progress going forward.
     - The top command displays the current nice value under the NI column
 jobs, fg, and bg only work with processes started from the current shell
 
+##
+**Entry 5**
+- Focus: Executing and degbugging shell scripts
+- Commands / Concepts: `touch myscript`, `sudo vim myscript`, `bash -x myscript`
+
+- Practice: 
+    - Created a script file using `touch myscript` in my home directory
+    - Edited the script multiple times with `sudo vim`
+    - Executed the script using `bash -x myscript` to trace commands line by line
+
+- Notes: 
+    - `bash -x myscript` executes commands from a file
+    - `bash -x` prints each command before executing it, which is useful for debugging
