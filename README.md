@@ -104,3 +104,22 @@ Daily logging begins here to keep track of progress going forward.
     - VSZ shows the size of the image process, the amount of memory allocated for the process.
     - RSS shows the size of the program in memory, the amount that is actually being used.
     
+
+##
+**Entry 4**
+- Focus: Starting background processes, Killing and renicing processes
+- Command / Concepts: `jobs`, `fg %`,`bg %`, `nice`, `renice`, `kill`, `killall`
+
+- Practice:
+    - Used `kill -SIGSTOP <pid>` to pause the `gedit` process
+    - Ran `gedit` with an initial nice value of 5 using the `nice` command 
+    - Using the `renice` command change value to 7
+    - Verified the updated nice value using the `top` command
+    
+- Notes / Issues: 
+    - SIGSTOP immediately pauses a process and cannot be ignored by the process
+    - Lower nice values give a process higher priority, while higher nice values lower its priority
+    - Only privileged users can decrease a nice value (increase priority)
+    - The top command displays the current nice value under the NI column
+jobs, fg, and bg only work with processes started from the current shell
+
