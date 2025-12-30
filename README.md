@@ -137,6 +137,7 @@ jobs, fg, and bg only work with processes started from the current shell
     - `bash -x myscript` executes commands from a file
     - `bash -x` prints each command before executing it, which is useful for debugging
 
+##
 **Entry 6**
 - Focus: Creating and executing a bash script, passing arguments, and running it via PATH.
 - Commands / Concepts: `mv`, `chmod 755`, Executable scripts $PATH, Positional parameters ($1, $2),`bash -x`, Variable defaults (${VAR:-default})
@@ -149,7 +150,7 @@ jobs, fg, and bg only work with processes started from the current shell
     - Debug execution
     - Rename and execute the script
     - Typed commands in shell to test how parameter expansion works 
-        -`${var:-value}`- uses value if var is unset or empty
+        - `${var:-value}`- uses value if var is unset or empty
 
 - Notes:
     - Script arguments are accessed using positional parameters:
