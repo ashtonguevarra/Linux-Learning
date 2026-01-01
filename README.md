@@ -31,10 +31,11 @@ Daily logging begins here to keep track of progress going forward.
 
 ## 📖 Learning Log
 
-**Entry 1**
-- Focus: Searching files with find, Finding files by user, Finding files by permission, Finding files by date and time, Finding files and executing commands 
-- Commands / Concepts: Working with text files,`find`, `mkdir`, `chmod`, `cd`,`-ctime`, `-perm`
-- Practice:
+## **Entry 1**
+### Focus: Searching files with find, Finding files by user, Finding files by permission, Finding files by date and time, Finding files and executing commands 
+### Commands / Concepts: Working with text files,`find`, `mkdir`, `chmod`, `cd`,`-ctime`, `-perm`
+
+### Practice:
     - Created a `TEST` directory in the home directory
         - `mkdir TEST`
     - Created files `one`, `two`, and `three`
@@ -49,17 +50,16 @@ Daily logging begins here to keep track of progress going forward.
         - `mkdir /tmp/FILES` 
     - Used `find` with size filters to locate files between 5MB and 10MB under `/usr/share`
         - `find /usr/share -size +5M -size -10M` 
-- Notes / Issues:
+### Notes / Issues:
     - `chmod 777` grants full permissions to everyone
     - `-ctime +300` finds files older than 300 days
     - System directories like `/usr/share` often require elevated privileges
     - Copying files from `/usr/share` to `/tmp/FILES` was unsuccessful due to permission restrictions
     - Some files could not be accessed without `sudo`
-##
 
-**Entry 2**
-- Focus: File location, searching, directory creation, and copying files/directories
-- Commands / Concepts:
+## **Entry 2**
+### Focus: File location, searching, directory creation, and copying files/directories
+### Commands / Concepts:
     - `locate` – quickly find files using the system database
     - `find` – search files/directories by path and size
     - `mkdir` – create directories
@@ -67,7 +67,7 @@ Daily logging begins here to keep track of progress going forward.
     - Absolute vs relative paths
     - Navigating system directories (`/usr/share`, `/tmp`, home directory)
 
-- Practice:
+### Practice:
     - Used locate to search for passwd and /tmp/FILES
     - Created /tmp/FILES directory
     - Used find to list files and search by size range
@@ -75,22 +75,22 @@ Daily logging begins here to keep track of progress going forward.
     - Verified copied files using find
     - Copied selected files from /tmp/FILES into a hidden backup directory (.mybackup) in the home directory
 
-- Notes / Issues:
+### Notes / Issues:
     - locate may return no results if the database is not updated
     - Some cp commands initially failed due to incorrect paths
     - Learned the importance of using full absolute paths when copying system files
     - Confirmed successful file transfers by listing contents after copying
-##
-**Entry 3**
-- Focus: Managing running processes, understanding processes, listing processes
-- Command / Concepts: 
+
+## **Entry 3**
+### Focus: Managing running processes, understanding processes, listing processes
+### Command / Concepts: 
     - `ps u`
     - `ps ux | less`
     - `ps uax | less`
     - `ps -eo`
     - listing and changing processes with htop
     
-- Practice:
+### Practice:
     - List all processes running on my system, showing a full set of columns
         - `ps u`
     - sort those processes by the name of the user
@@ -100,49 +100,46 @@ Daily logging begins here to keep track of progress going forward.
     - Run the htop command to view processes running on my system. Go back and forth between CPU and memory.
         - `htop` - M keybind to switch to memory
         
-- Notes / Issues:
+### Notes / Issues:
     - VSZ shows the size of the image process, the amount of memory allocated for the process.
     - RSS shows the size of the program in memory, the amount that is actually being used.
     
 
-##
-**Entry 4**
-- Focus: Starting background processes, Killing and renicing processes
-- Command / Concepts: `jobs`, `fg %`,`bg %`, `nice`, `renice`, `kill`, `killall`
+## **Entry 4**
+### Focus: Starting background processes, Killing and renicing processes
+### Command / Concepts: `jobs`, `fg %`,`bg %`, `nice`, `renice`, `kill`, `killall`
 
-- Practice:
+### Practice:
     - Used `kill -SIGSTOP <pid>` to pause the `gedit` process
     - Ran `gedit` with an initial nice value of 5 using the `nice` command 
     - Using the `renice` command change value to 7
     - Verified the updated nice value using the `top` command
     
-- Notes / Issues: 
+### Notes / Issues: 
     - SIGSTOP immediately pauses a process and cannot be ignored by the process
     - Lower nice values give a process higher priority, while higher nice values lower its priority
     - Only privileged users can decrease a nice value (increase priority)
     - The top command displays the current nice value under the NI column
 jobs, fg, and bg only work with processes started from the current shell
 
-##
-**Entry 5**
-- Focus: Executing and degbugging shell scripts
-- Commands / Concepts: `touch myscript`, `sudo vim myscript`, `bash -x myscript`
+## **Entry 5**
+### Focus: Executing and degbugging shell scripts
+### Commands / Concepts: `touch myscript`, `sudo vim myscript`, `bash -x myscript`
 
-- Practice: 
+### Practice: 
     - Created a script file using `touch myscript` in my home directory
     - Edited the script multiple times with `sudo vim`
     - Executed the script using `bash -x myscript` to trace commands line by line
 
-- Notes: 
+### Notes: 
     - `bash -x myscript` executes commands from a file
     - `bash -x` prints each command before executing it, which is useful for debugging
 
-##
-**Entry 6**
-- Focus: Creating and executing a bash script, passing arguments, and running it via PATH.
-- Commands / Concepts: `mv`, `chmod 755`, Executable scripts $PATH, Positional parameters ($1, $2),`bash -x`, Variable defaults (${VAR:-default})
+## **Entry 6**
+### Focus: Creating and executing a bash script, passing arguments, and running it via PATH.
+### Commands / Concepts: `mv`, `chmod 755`, Executable scripts $PATH, Positional parameters ($1, $2),`bash -x`, Variable defaults (${VAR:-default})
 
-- Practice:
+### Practice:
     - Create a script named myscript
         - Used the read command to prompt the user for information and store that information to use later in the script.
     - Make it executable
@@ -152,7 +149,7 @@ jobs, fg, and bg only work with processes started from the current shell
     - Typed commands in shell to test how parameter expansion works 
         - `${var:-value}`- uses value if var is unset or empty
 
-- Notes:
+### Notes:
     - Script arguments are accessed using positional parameters:
     - $1 → first argument (foo)
     - $2 → second argument (bar)
