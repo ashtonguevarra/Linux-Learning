@@ -89,7 +89,7 @@ File location, searching, directory creation, and copying files/directories
 - Learned the importance of using full absolute paths when copying system files
 - Confirmed successful file transfers by listing contents after copying
 
-## **Entry 3*
+## **Entry 3**
 
 ### Focus: 
 Managing running processes, understanding processes, listing processes
