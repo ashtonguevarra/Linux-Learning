@@ -235,3 +235,36 @@ Bash parameter expansion, arithmetic operations, command history, script executi
 - `++I` increments before evaluation, `I++` increments after evaluation
 - Scripts must have execute permission to run directly
 - `~/bin` is a standard location for personal scripts included in `PATH`
+
+## **Entry 8**
+
+### Focus
+Writing and debugging Bash scripts using conditional statements and the `test` command.
+
+### Commands / Concepts
+- `mkdir`, `cd`, `ls`
+- `touch`
+- `vim`
+- `mv`
+- `bash -x`
+- `./scriptName`
+- `if` / `then`
+- `test`
+- `help test`
+
+### Practice
+- Created a `bin/` directory to store scripts
+- Wrote multiple Bash scripts:
+  - `ifthen`
+  - `scriptOne`
+  - `scriptTwo`
+  - `scriptThree`
+- Edited scripts repeatedly in `vim` to correct syntax and logic
+- Renamed scripts for naming consistency
+- Used `bash -x` to trace execution and debug errors
+- Executed scripts directly once working
+
+### Notes
+- `bash -x` is useful for step-by-step debugging
+- Direct execution requires a proper shebang and execute permissions
+- The `test` command is commonly used inside `if` statements to evaluate conditions
