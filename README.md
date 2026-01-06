@@ -250,15 +250,15 @@ Writing and debugging Bash scripts using conditional statements and the `test` c
 - `./scriptName`
 - `if` / `then`
 - `test`
+-  File test operators: `-x`, `-w`
 - `help test`
 
 ### Practice
 - Created a `bin/` directory to store scripts
 - Wrote multiple Bash scripts:
-  - `ifthen`
-  - `scriptOne`
-  - `scriptTwo`
-  - `scriptThree`
+  - [scriptOne](https://github.com/ashtonguevarra/linux-learning/blob/main/bash-scripts/scriptOne)
+  - [scriptTwo](https://github.com/ashtonguevarra/linux-learning/blob/main/bash-scripts/scriptTwo)
+  - [scriptThree](https://github.com/ashtonguevarra/linux-learning/blob/main/bash-scripts/scriptThree) 
 - Edited scripts repeatedly in `vim` to correct syntax and logic
 - Renamed scripts for naming consistency
 - Used `bash -x` to trace execution and debug errors
