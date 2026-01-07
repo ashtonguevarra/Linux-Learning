@@ -256,9 +256,9 @@ Writing and debugging Bash scripts using conditional statements and the `test` c
 ### Practice
 - Created a `bin/` directory to store scripts
 - Wrote multiple Bash scripts:
-  - [scriptOne](https://github.com/ashtonguevarra/linux-learning/blob/main/bash-scripts/scriptOne)
-  - [scriptTwo](https://github.com/ashtonguevarra/linux-learning/blob/main/bash-scripts/scriptTwo)
-  - [scriptThree](https://github.com/ashtonguevarra/linux-learning/blob/main/bash-scripts/scriptThree) 
+  - [scriptOne](https://github.com/ashtonguevarra/linux-learning/blob/main/bash-scripts/bin/scriptOne)
+  - [scriptTwo](https://github.com/ashtonguevarra/linux-learning/blob/main/bash-scripts/bin/scriptTwo)
+  - [scriptThree](https://github.com/ashtonguevarra/linux-learning/blob/main/bash-scripts/bin/scriptThree) 
 - Edited scripts repeatedly in `vim` to correct syntax and logic
 - Renamed scripts for naming consistency
 - Used `bash -x` to trace execution and debug errors
@@ -282,9 +282,9 @@ Writing and debugging Bash scripts using conditional statements and the `test` c
 
 ### Commands / Concepts
 
-* cd, touch, mv, ls, chmod
-* bash -x
-* Test operators: -d, -e
+* `cd`, `touch`, `mv`, `ls`, `chmod`
+* `bash -x`
+* Test operators: `-d`, `-e`
 * if statements
 * case statements
 * for loops
