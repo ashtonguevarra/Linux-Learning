@@ -1,9 +1,0 @@
-echo "Bash Script Practice"
-
-MYDATE=$(date)
-
-echo '$HOME * `date`'
-echo "$HOME * `date`"
-echo $HOME * `date`
-
-

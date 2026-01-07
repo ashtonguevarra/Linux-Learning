@@ -268,3 +268,66 @@ Writing and debugging Bash scripts using conditional statements and the `test` c
 - `bash -x` is useful for step-by-step debugging
 - Direct execution requires a proper shebang and execute permissions
 - The `test` command is commonly used inside `if` statements to evaluate conditions
+
+## **Entry 9**
+
+### Focus
+
+* Bash scripting fundamentals
+* Conditional logic and control flow
+* Loop constructs
+* Script debugging with execution tracing
+* File permissions and execution
+
+
+### Commands / Concepts
+
+* cd, touch, mv, ls, chmod
+* bash -x
+* Test operators: -d, -e
+* if statements
+* case statements
+* for loops
+* Shebang (#!/bin/bash)
+* File permission modes (rwx)
+
+
+### Practice
+
+scriptFour
+
+* Created a directory only if it did not already exist
+* First execution created /tmp/testdir
+* Subsequent executions detected the directory and skipped creation
+
+scriptFive
+
+* Checked for file existence
+* Script always printed "already exists" due to a missing filename in the test condition
+* Learned that test operators require valid variables or paths
+
+scriptSix (renamed to caseCommand)
+
+* Implemented a case statement using the output of date +%a
+* Assigned different backup paths and tape devices based on the day
+* Verified correct behavior using bash -x
+
+forLoop
+
+* Implemented a for loop to iterate over values
+* Initial execution failed due to missing execute permissions
+* Added a shebang and updated permissions to allow execution
+* Used bash -x to trace loop execution
+* Corrected invalid variable usage
+* Final script executed successfully and produced repeated output
+
+
+### Notes
+
+* Scripts must include a shebang to be executed directly
+* Execute permission is required when running scripts with ./script
+* bash -x is useful for understanding execution flow and debugging
+
+
+
+
