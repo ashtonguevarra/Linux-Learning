@@ -328,7 +328,7 @@ forLoop
 * Execute permission is required when running scripts with ./script
 * bash -x is useful for understanding execution flow and debugging
 
-hello
+
 
 
 
