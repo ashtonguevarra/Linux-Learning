@@ -1,0 +1,6 @@
+STRING="Tonee"
+if [ "$STRING" != "Ashton" ] ; then
+	echo "Atleast it's not Ashton"
+else
+	echo "Oh no its Ashton"
+fi
