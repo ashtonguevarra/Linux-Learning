@@ -22,7 +22,7 @@ My goal is to build strong Linux fundamentals for Cloud / DevOps roles.
 Linux-Learning/
 ├── README.md
 └── bash-scripts/
-    └── backup.sh
+    └── bin
 
 ```
 ## 📌 Note
@@ -327,6 +327,54 @@ forLoop
 * Scripts must include a shebang to be executed directly
 * Execute permission is required when running scripts with ./script
 * bash -x is useful for understanding execution flow and debugging
+
+## **Entry 10**
+
+### Focus
+Practicing loop constructs (`while`, `until`), file permissions, script execution, debugging with `bash -x`, and using `grep` to inspect system and environment information.
+
+### Commands / Concepts
+- `cd`
+- `touch`
+- `chmod`
+- `ls -l`
+- `./scriptName`
+- `bash -x`
+- `while` loop
+- `until` loop
+- Numeric test operators: `-lt`, `-eq`
+- `grep`
+- `/etc/passwd`
+- `env`
+- Environment variables (`HOME`)
+- `man grep`
+
+### Practice
+- Navigated to `~/bin` directory
+- Created executable scripts:
+  - `whileDo`
+  - `untilLoop`
+- Modified permissions using `chmod a+rwx` and `chmod u+rwx`
+- Verified permissions with `ls -l`
+- Executed scripts directly using `./scriptName`
+- Used `bash -x` to trace loop execution step-by-step
+- Observed loop counters incrementing from `0` to `9`
+
+- Practiced `while` loop behavior using a less-than condition (`-lt`)
+- Practiced `until` loop behavior using an equality condition (`-eq`)
+- Encountered and corrected an invalid Bash option (`-X` vs `-x`)
+
+- Used `grep` to search `/etc/passwd` for home directory entries
+- Confirmed user home directory and login shell
+- Used `env | grep` to filter environment variables by prefix
+- Identified the `HOME` environment variable and related values
+- Consulted `man grep` for command reference
+
+### Notes
+- `bash -x` prints each command as it executes, useful for debugging loops
+- `while` loops run while the condition is true
+- `until` loops run until the condition becomes true
+- File permissions mus
 
 
 
