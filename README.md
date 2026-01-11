@@ -376,6 +376,50 @@ Practicing loop constructs (`while`, `until`), file permissions, script executio
 - `until` loops run until the condition becomes true
 - File permissions mus
 
+## **Entry 11**
+
+### Focus
+Using `for` loops to process multiple files, renaming files safely, understanding script execution context, and debugging unexpected `mv` behavior.
+
+### Commands / Concepts
+- `cd`
+- `ls -l`
+- `vim`
+- `chmod`
+- `./scriptName`
+- `bash -x`
+- `for` loop
+- Filename handling
+- `mv`
+- Wildcards (`*`)
+- Script execution paths (`./script`, `./bin/script`)
+- Current working directory context
+
+### Practice
+- Navigated to `~/bin`
+- Created and edited scripts:
+  - `touchScript`
+  - `testScript`
+- Verified execute permissions on `testScript`
+- Executed `testScript` directly from inside `~/bin`
+- Used `bash -x` to trace script execution
+
+- Observed `for file in *` iterating over all files in the directory
+- Used `tr` to replace whitespace with underscores in filenames
+- Noted repeated warnings when source and destination filenames were identical
+- Identified that `mv` reports errors when attempting to rename a file to itself
+
+- Ran `testScript` from the home directory using `./bin/testScript`
+- Observed unintended behavior where the script attempted to rename files and directories in `$HOME`
+- Learned that wildcard expansion (`*`) depends on the current working directory
+- Returned to `~/bin` to edit and correct the script logic
+
+### Notes
+- `for file in *` operates on the current directory, not the script’s directory
+- Running a script from a different location can change its effects
+- `bash -x` is essential for understanding loop behavior and command expansion
+- Scripts that modify files should include safeguards to avoid acting on unintended directories
+- Renaming logic should check whether source and destination filenames differ before calling `mv`
 
 
 
